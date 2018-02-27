@@ -30,9 +30,7 @@
             }
         },
         created() {
-          Status.all()
-            // .then(response => this.statuses = response.data) code dibawah sama dengan ini
-            .then(({data}) => this.statuses = data)
+          Status.all(statuses => this.statuses = statuses)
         },
         methods: {
           postedOn(status) {
