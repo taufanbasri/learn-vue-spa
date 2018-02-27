@@ -1,12 +1,12 @@
 <template>
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card card-default">
-                    <div class="card-header">Contact</div>
+        <div class="columns">
+            <div class="column">
+                <div class="messag">
+                    <div class="message-header">Contact</div>
 
-                    <div class="card-body">
-                        I'm contact page.
+                    <div class="mess-body">
+                        I'm contact component.
                     </div>
                 </div>
             </div>
