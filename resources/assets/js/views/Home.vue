@@ -21,6 +21,7 @@
 
 <script>
     import moment from 'moment';
+    import Status from '../models/Status';
 
     export default {
         data() {
@@ -29,7 +30,7 @@
             }
         },
         created() {
-          axios.get('/statuses')
+          Status.all()
             // .then(response => this.statuses = response.data) code dibawah sama dengan ini
             .then(({data}) => this.statuses = data)
         },
